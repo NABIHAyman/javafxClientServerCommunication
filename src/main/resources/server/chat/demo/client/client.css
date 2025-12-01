@@ -1,0 +1,478 @@
+.root-container {
+    -fx-background-color: #1E1E1E;
+    -fx-padding: 0px;
+}
+
+.main-container {
+    -fx-background-color: #252526;
+    -fx-padding: 0px;
+    -fx-spacing: 0px;
+    -fx-background-radius: 0px;
+    -fx-border-radius: 0px;
+    -fx-effect: none;
+    -fx-max-height: Infinity;
+    -fx-max-width: Infinity;
+}
+
+/* ScrollPane Styling */
+.message-scroll-pane {
+    -fx-background-color: #2D2D2D;
+    -fx-background: #2D2D2D;
+    -fx-border-color: #3E3E3E;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 1px;
+    -fx-min-height: 200px;
+    -fx-max-height: Infinity;
+    -fx-focus-traversable: true;
+}
+
+/* Make the scrollbar always visible and more prominent */
+.message-scroll-pane .scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 14px;
+    -fx-padding: 2px;
+}
+
+/* Track (background) of the scrollbar */
+.message-scroll-pane .scroll-bar:vertical .track {
+    -fx-background-color: #2D2D2D;
+    -fx-border-color: #3E3E3E;
+    -fx-background-radius: 4px;
+    -fx-border-radius: 4px;
+}
+
+/* The main scrollbar thumb */
+.message-scroll-pane .scroll-bar:vertical .thumb {
+    -fx-background-color: #4A4A4A;
+    -fx-background-radius: 4px;
+    -fx-background-insets: 2px;
+    -fx-min-height: 30px;
+    -fx-opacity: 0.7;
+}
+
+/* Hover effect for the thumb */
+.message-scroll-pane .scroll-bar:vertical .thumb:hover {
+    -fx-background-color: #5A5A5A;
+    -fx-opacity: 0.9;
+}
+
+/* When scrollbar is pressed */
+.message-scroll-pane .scroll-bar:vertical .thumb:pressed {
+    -fx-background-color: #6A6A6A;
+}
+
+/* Scrollbar buttons */
+.message-scroll-pane .scroll-bar:vertical .increment-button,
+.message-scroll-pane .scroll-bar:vertical .decrement-button {
+    -fx-background-color: #2D2D2D;
+    -fx-padding: 2px;
+}
+
+/* Scrollbar buttons arrows */
+.message-scroll-pane .scroll-bar:vertical .increment-arrow,
+.message-scroll-pane .scroll-bar:vertical .decrement-arrow {
+    -fx-background-color: #A0A0A0;
+}
+
+/* Viewport and Content */
+.message-scroll-pane .viewport {
+    -fx-background-color: #2D2D2D;
+}
+
+.message-scroll-pane .content {
+    -fx-background-color: #2D2D2D;
+}
+
+/* Message container */
+.message-container-vbox {
+    -fx-background-color: #2D2D2D;
+    -fx-padding: 10px;
+    -fx-spacing: 8px;
+}
+
+/* Ensure the scrollpane is focusable */
+.message-scroll-pane:focused {
+    -fx-background-color: #2D2D2D;
+}
+
+.message-container {
+    -fx-padding: 10 15 10 15;
+    -fx-background-color: #363636;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 4, 0, 0, 2);
+}
+
+.message-input {
+    -fx-background-color: #363636;
+    -fx-text-fill: #E0E0E0;
+    -fx-prompt-text-fill: #888888;
+    -fx-font-size: 14px;
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-padding: 10 15 10 15;
+    -fx-border-color: #4A4A4A;
+    -fx-border-width: 1px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+}
+
+.message-input:focused {
+    -fx-border-color: #5A9FD4;
+    -fx-border-width: 2px;
+    -fx-background-color: #404040;
+}
+
+.send-button {
+    -fx-background-color: #5A9FD4;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-padding: 10 25 10 25;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 4, 0, 0, 2);
+}
+
+.send-button:hover {
+    -fx-background-color: #6AB0E3;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 6, 0, 0, 3);
+}
+
+.send-button:pressed {
+    -fx-background-color: #4A8FC4;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 2, 0, 0, 1);
+    -fx-translate-y: 1px;
+}
+
+.emoji {
+    -fx-font-family: 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 'Apple Color Emoji', 'Android Emoji', 'EmojiSymbols', 'Symbola';
+    -fx-font-size: 32px !important;
+}
+
+.emoji-picker-button {
+    -fx-background-color: #3A3A3A;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 18px;
+    -fx-padding: 8 12 8 12;
+    -fx-border-color: #4A4A4A;
+    -fx-border-width: 1px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+
+.emoji-picker-button:hover {
+    -fx-background-color: #4A4A4A;
+}
+
+.emoji-picker-button:pressed {
+    -fx-background-color: #2E2E2E;
+    -fx-translate-y: 1px;
+}
+
+.emoji-picker {
+    -fx-background-color: #363636 !important;
+    -fx-padding: 10px !important;
+    -fx-background-radius: 8px !important;
+    -fx-border-radius: 8px !important;
+    -fx-border-color: #4A4A4A !important;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 5) !important;
+    -fx-font-family: 'Segoe UI Emoji', 'Noto Color Emoji', 'Apple Color Emoji', 'Android Emoji', 'EmojiSymbols', 'Symbola' !important;
+}
+
+.emoji-picker .context-menu {
+    -fx-background-color: transparent !important; /* keep child transparent; parent styled below */
+    -fx-padding: 0 !important;
+}
+
+.context-menu.emoji-picker,
+.context-menu.emoji-picker:hover,
+.context-menu.emoji-picker:focused {
+    -fx-background-color: rgba(40,40,40,0.9) !important;
+    -fx-padding: 10px !important;
+    -fx-background-insets: 0 !important;
+    -fx-border-color: rgba(255,255,255,0.08) !important;
+    -fx-background-radius: 10px !important;
+    -fx-border-radius: 10px !important;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.35), 16, 0, 0, 8) !important;
+}
+
+.context-menu.emoji-picker .menu-item,
+.context-menu.emoji-picker .menu-item:hover,
+.context-menu.emoji-picker .custom-menu-item,
+.context-menu.emoji-picker .custom-menu-item:hover {
+    -fx-background-color: transparent !important;
+    -fx-padding: 0 !important;
+}
+
+.context-menu.emoji-picker .scroll-pane,
+.context-menu.emoji-picker .scroll-pane:focused,
+.context-menu.emoji-picker .scroll-pane .viewport,
+.context-menu.emoji-picker .scroll-pane .content,
+.context-menu.emoji-picker .custom-menu-item > .container,
+.context-menu.emoji-picker .separator,
+.context-menu.emoji-picker .separator:horizontal .line {
+    -fx-background-color: transparent !important;
+    -fx-border-color: transparent !important;
+    -fx-background-insets: 0 !important;
+}
+
+.emoji-option-button {
+    -fx-background-color: transparent !important;
+    -fx-border-color: transparent !important;
+    -fx-font-family: 'Segoe UI Emoji', 'Noto Color Emoji', 'Apple Color Emoji', 'Android Emoji', 'EmojiSymbols', 'Symbola' !important;
+    -fx-font-size: 24px !important;
+    -fx-text-fill: #FFFFFF !important;
+    -fx-cursor: hand !important;
+    -fx-padding: 8px !important;
+    -fx-min-width: 40px !important;
+    -fx-min-height: 40px !important;
+    -fx-pref-width: 40px !important;
+    -fx-pref-height: 40px !important;
+    -fx-max-width: 40px !important;
+    -fx-max-height: 40px !important;
+    -fx-background-radius: 8px !important;
+    -fx-border-radius: 8px !important;
+    -fx-effect: none !important;
+}
+
+.emoji-option-button:hover {
+    -fx-background-color: rgba(90, 159, 212, 0.2) !important;
+    -fx-scale-x: 1.2 !important;
+    -fx-scale-y: 1.2 !important;
+}
+
+.emoji-option-button:pressed {
+    -fx-scale-x: 1.1 !important;
+    -fx-scale-y: 1.1 !important;
+    -fx-background-color: rgba(90, 159, 212, 0.3) !important;
+}
+
+.message-text {
+    -fx-font-family: 'Segoe UI', Arial, sans-serif;
+        -fx-font-size: 14px;
+        -fx-fill: #E0E0E0;
+}
+
+.scroll-bar {
+    -fx-background-color: #2D2D2D;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #4A4A4A;
+    -fx-background-radius: 4px;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #5A5A5A;
+}
+
+.scroll-bar .track {
+    -fx-background-color: #2D2D2D;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-background-color: transparent;
+}
+
+Text {
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-font-size: 14px;
+}
+
+.control-button {
+    -fx-background-color: #FF9800;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 16px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+    -fx-font-family: "Segoe UI", "Arial", sans-serif;
+    -fx-padding: 10 20 10 20;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 4, 0, 0, 2);
+}
+
+.control-button:hover {
+    -fx-background-color: #FFB74D;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 6, 0, 0, 3);
+}
+
+.control-button:pressed {
+    -fx-background-color: #FF8C00;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 2, 0, 0, 1);
+    -fx-translate-y: 1px;
+}
+
+.image-container {
+    -fx-padding: 5 10 5 10;
+    -fx-background-color: #2A2A2A;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+}
+
+/* Typing indicator */
+.typing-indicator {
+    -fx-padding: 6 12 6 12;
+    -fx-background-color: rgba(0, 0, 0, 0.2);
+    -fx-background-radius: 10px;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 10px;
+    -fx-spacing: 8px;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.typing-indicator .label {
+    -fx-text-fill: #E0E0E0;
+    -fx-font-size: 12px;
+}
+
+.typing-dots {
+    -fx-alignment: CENTER_LEFT;
+    -fx-spacing: 4px;
+    -fx-padding: 2 0 0 0;
+}
+
+.typing-dot {
+    -fx-fill: #E0E0E0;
+    -fx-opacity: 0.7;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 1, 0, 0, 1);
+    -fx-radius: 2px;
+    -fx-min-width: 4px;
+    -fx-min-height: 4px;
+    -fx-max-width: 4px;
+    -fx-max-height: 4px;
+}
+
+/* Auth overlay styling (username/color dialog) */
+.auth-overlay {
+    -fx-background-color: rgba(0, 0, 0, 0.45);
+}
+
+.auth-card {
+    -fx-padding: 20px;
+    -fx-background-color: #363636;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-color: #4A4A4A;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.35), 16, 0, 0, 8);
+    -fx-min-width: 360px;
+}
+
+.auth-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #E0E0E0;
+}
+
+.auth-card .label {
+    -fx-text-fill: #E0E0E0;
+}
+
+.auth-card .text-field {
+    -fx-background-color: #2F2F2F;
+    -fx-text-fill: #E0E0E0;
+    -fx-prompt-text-fill: #9E9E9E;
+    -fx-border-color: #4A4A4A;
+    -fx-border-width: 1px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+}
+
+.auth-card .text-field:focused {
+    -fx-border-color: #5A9FD4;
+    -fx-background-color: #3A3A3A;
+    -fx-border-width: 2px;
+}
+
+.auth-card .button {
+    -fx-background-color: #3A3A3A;
+    -fx-text-fill: #FFFFFF;
+    -fx-padding: 8 14 8 14;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-border-color: #4A4A4A;
+}
+
+.auth-card .button:hover {
+    -fx-background-color: #4A4A4A;
+}
+
+.auth-card .button:default {
+    -fx-background-color: #5A9FD4;
+}
+
+.auth-card .button:default:hover {
+    -fx-background-color: #6AB0E3;
+}
+
+/* ColorPicker dark styling (scoped to auth dialog) */
+.auth-card .color-picker {
+    -fx-background-color: #2F2F2F;
+    -fx-text-fill: #E0E0E0;
+    -fx-border-color: #4A4A4A;
+    -fx-border-width: 1px;
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-padding: 6px 8px;
+}
+
+.auth-card .color-picker:hover {
+    -fx-background-color: #3A3A3A;
+    -fx-border-color: #5A5A5A;
+}
+
+.auth-card .color-picker:focused {
+    -fx-border-color: #5A9FD4;
+    -fx-border-width: 2px;
+    -fx-background-color: #3A3A3A;
+}
+
+/* Arrow button and swatch inside ColorPicker */
+.auth-card .color-picker .arrow-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 6px;
+}
+
+.auth-card .color-picker .arrow {
+    -fx-background-color: #E0E0E0;
+}
+
+.auth-card .color-picker .picker-color {
+    -fx-background-color: transparent;
+    -fx-border-color: #4A4A4A;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+}
+
+/* Popup palette basic dark theme */
+.color-palette {
+    -fx-background-color: #2F2F2F;
+    -fx-border-color: #4A4A4A;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+}
+
+.color-palette .color-rect,
+.color-palette .color-square {
+    -fx-border-color: transparent;
+}
+
+.color-palette .color-rect:hover,
+.color-palette .color-square:hover {
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.1), 6, 0, 0, 0);
+}
