@@ -213,6 +213,12 @@ server is meant to run on a local network.
 
 ---
 
+## License
+
+Released under the [MIT License](LICENSE) — © 2026 Ayman NABIH.
+
+---
+
 ## Author
 
 **Ayman NABIH**
